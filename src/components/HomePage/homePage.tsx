@@ -34,7 +34,7 @@ export default function HomePage(){
 
                     <div className='containerWhatsapp'>
                         <a className= "linkWhatsapp" href="https://wa.me/5511968337434" target="_blank">
-                            <ImageWhatsapp src="/image/whatsapp.svg" alt="" width={0} height={0}/>
+                            <ImageWhatsapp src="/image/whatsapp.svg" alt="Link whatsapp" width={0} height={0}/>
                         </a>
 
                     </div>

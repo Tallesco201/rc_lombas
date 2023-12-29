@@ -7,7 +7,7 @@ export default function HeaderStyle()  {
   return (
     <>
     <Header>
-        <Image className='logoHeader' src="/image/logoComLetrasBrancas.svg" alt="Logo RC Lombas" width={100} height={100} />
+        <Image className='logoHeader' src="/image/logoComLetrasBrancas.svg" alt="Logo RC Lombas cabeçalho" width={100} height={100} />
         <div>
             <nav>
                 <Link to="home" spy={true} smooth={true}>Home</Link>

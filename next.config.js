@@ -4,6 +4,19 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+        ],
+      },
+    ];
+  },
 }
 
 module.exports = nextConfig
