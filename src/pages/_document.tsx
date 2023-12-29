@@ -6,9 +6,7 @@ export default function Document() {
       <Head />
       <title>RC Lombas - RC Lombas - RC Lombas</title>
 
-      <meta name="description" content="Oferecemos serviços como assessoria para alvará, 
-      abertura/encerramento de CNPJ, declaração de imposto, resoluções de malha fina, emissão de Nota Fiscal
-       e mais. Nosso objetivo é simplificar sua vida e aumentar a eficiência da sua empresa." />
+      <meta name="description" content="Oferecemos assessoria para alvará, gestão de CNPJ, declaração de imposto, resolução de malha fina e emissão de NF. Simplificamos sua vida e aumentamos a eficiência da sua empresa." />
 
       <meta name="keywords" content="assessoria empresarial, alvará de funcionamento, abertura de CNPJ, encerramento de CNPJ, declaração de imposto de renda, resolução de malha fina, emissão de Nota Fiscal,Negociações com a receita federal, Carne Leão, Carne Leao, serviços contábeis, consultoria financeira" />
 
