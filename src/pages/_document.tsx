@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="pt">
       <Head />
-      <title>RC Lombas</title>
+      <title>RC Lombas - RC Lombas - RC Lombas</title>
 
       <meta name="description" content="Oferecemos serviços como assessoria para alvará, 
       abertura/encerramento de CNPJ, declaração de imposto, resoluções de malha fina, emissão de Nota Fiscal
