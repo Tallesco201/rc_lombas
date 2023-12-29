@@ -15,6 +15,14 @@ export const FooterContact =  styled.footer`
     font-style: normal;
     }
 
+    @font-face {
+    font-family: 'CenturyGothic';
+    src: url('/fonts/CenturyGothic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,13 +70,15 @@ export const FooterContact =  styled.footer`
             justify-content: flex-end;
         }
 
-        h3{
+        h4{
             margin-left: 5%;
             display: flex;
             justify-content: center;
             align-items: flex-end;
             margin-bottom: 2%;
             font-size: 22px;
+
+            font-family: 'CenturyGothic';
 
             @media only screen and (max-width:600px){
                 font-size: 18px;

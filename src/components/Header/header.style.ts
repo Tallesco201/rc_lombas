@@ -45,6 +45,7 @@ export const Header = styled.header`
             z-index: 1;
             transition: color 0.4s ease;
             padding-bottom: 5px;
+            cursor: pointer;
 
             @media only  screen and (max-width:400px) {  
                 font-size: 12px;

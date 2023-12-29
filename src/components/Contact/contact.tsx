@@ -26,7 +26,7 @@ export default function ContactFooter(){
                     <div className="containerLogoFooter">
                         <ImageLogo src= '/image/logoComLetrasPretas.svg' alt='Logo rodape' width={0} height={0} />
                     </div>
-                    <h3>CNPJ: 51.876.637/0001-87</h3>
+                    <h4>CNPJ: 51.876.637/0001-87</h4>
                     <ImageFooterCeo src= '/image/fotoRaphaFooter.svg' alt='Foto Secretaria' width={0} height={0}/>
 
 
