@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styled from "styled-components";
 
 export const ListNotOrden = styled.ul`
@@ -30,7 +31,8 @@ export const ListNotOrden = styled.ul`
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 300px;
+        width: 30%;
+        max-width: 300px;
         height: 230px;
         letter-spacing: 0;
         line-height: 20px;
@@ -41,15 +43,74 @@ export const ListNotOrden = styled.ul`
 
         box-shadow: 3px 4px 4px 6px #00000026;
 
-        .titleValues{
+        @media only screen and (max-width:600px){
+            width: 70%;
+            max-width: 400px;
+        }
+        @media only screen and (max-width:350px){
+           padding: 1%;
+        }
+
+
+        .titleValue{
             font-family:'CenturyGothicBold' ;
             font-size: 14px;
             margin-bottom: 8%;
+            @media only screen and (max-width:740px){
+                font-size: 12px;
+            }
+
+            @media only screen and (max-width:600px){
+                font-size: 14px;
+            }
+
+            @media only screen and (max-width:350px){
+                font-size: 12px;
+            }
+
         }
         .containerImageValue{
             margin-top:6% ;
         }
 
+        .textValue{
+
+            @media only screen and (max-width:740px){
+                font-size: 11px;
+            }
+            @media only screen and (max-width:600px){
+                font-size: 11px;
+            }
+
+        }
+
+
         
     }
+
+
+    @media only screen and (max-width:600px){
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+
 `
+
+ export const ImageValue = styled(Image)`
+    width: 50px;
+    height: 50px;
+    @media only screen and (max-width:740px){
+        width: 40px;
+        height: 40px;
+    }
+    @media only screen and (max-width:600px){
+        width: 55px;
+        height: 55px;
+    }
+    @media only screen and (max-width:350px){
+        width: 40px;
+        height: 40px;
+    }
+ 
+ `

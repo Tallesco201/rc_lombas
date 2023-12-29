@@ -1,17 +1,20 @@
 
 import Image from 'next/image'
-import {Background, BigLogo, ContainerBigLogo} from './homePage.style'
+import {Background, BigLogo, ContainerBigLogo, ImageWhatsapp} from './homePage.style'
+import { Element } from 'react-scroll'
+import Link from 'next/link'
+
 
 export default function HomePage(){
     return (
-        <>
+        <Element name="home">
             <Background className="background">
             
                 <div className='containerGeral'>
 
                     <h1>Assessoria assertiva para a sua empresa.</h1>
                     <ContainerBigLogo>
-                    <BigLogo className='logoHeader' src="/image/logoGrande.svg" alt="Logo RC Lombas" width={500} height={388} />
+                    <BigLogo className='logoHeader' src="/image/logoGrande.svg" alt="Logo RC Lombas" width={0} height={0} />
                     </ContainerBigLogo>
 
 
@@ -29,10 +32,16 @@ export default function HomePage(){
                         </p>
                     </div>
 
+                    <div className='containerWhatsapp'>
+                        <a className= "linkWhatsapp" href="https://wa.me/5511968337434" target="_blank">
+                            <ImageWhatsapp src="/image/whatsapp.svg" alt="" width={0} height={0}/>
+                        </a>
+
+                    </div>
                 
 
             </Background>
         
-        </>
+        </Element>
     )
 }

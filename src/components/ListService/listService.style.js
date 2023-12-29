@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styled from "styled-components";
 
 export const ContainerService = styled.ul`
@@ -18,8 +19,13 @@ export const ContainerService = styled.ul`
     src: url('/fonts/GOTHICB.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    }
 
-}
+    @media only screen and (max-width:600px){
+        flex-direction: column;
+    }
+
+
     li{
         display: flex;
         align-items: center;
@@ -32,6 +38,13 @@ export const ContainerService = styled.ul`
         margin-bottom: 30px;
 
         box-shadow: 3px 2px 2px 5px #00000026;
+
+        @media only screen and (max-width:600px){
+            width: 70%;
+        }
+        @media only screen and (max-width:380px){
+            width: 85%;
+        }
         div{
             display: flex;
             justify-content: flex-start;
@@ -47,6 +60,20 @@ export const ContainerService = styled.ul`
 
             p{
                 font-family: 'CenturyGothicBold';
+                @media only screen and (max-width:769px){
+                    font-size: 14px;
+                }
+                @media only screen and (max-width:700px){
+                    font-size: 12px;
+                }
+                @media only screen and (max-width:600px){
+                   font-size: 14px;
+                }
+                @media only screen and (max-width:550px){
+                   font-size: 12px;
+                }
+
+                
             }
         }
 
@@ -72,5 +99,30 @@ margin-top: 5%;
 
 text-align: center;
 
+@media only screen and (max-width:500px){
+    width: 80%;
+}
+@media only screen and (max-width:350px){
+    width: 95%;
+}
+
     
+`
+
+export const ImageService= styled(Image)`
+    width:50px ;
+    height: 50px;
+    @media only screen and (max-width:700px){
+        width: 40px;
+        height: 40px;
+    }
+    @media only screen and (max-width:600px){
+        width: 45px;
+        height: 45px;
+    }
+    @media only screen and (max-width:550px){
+        width: 40px;
+        height: 40px;
+    }
+
 `

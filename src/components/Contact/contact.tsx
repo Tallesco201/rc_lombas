@@ -1,38 +1,39 @@
 import { contact } from "@/pages/api/api.Image";
 import Image from "next/image";
 import Link from "next/link";
-import{FooterContact} from'./contactFooter.style'
+import{FooterContact, ImageContacts, ImageFooterCeo, ImageLogo} from'./contactFooter.style'
+import { Element } from "react-scroll";
 
 export default function ContactFooter(){
     return (
-        <> 
+        <Element name ="contact"> 
             <FooterContact>
                 <h2>Informações de Contato</h2>
 
                 <nav >
                     {contact.map((value)=> (
                         
-                            <Link key={value.id}  href={value.url}>
-                                <Image src= {value.iconContact} alt='icone contato'  width={55} height={55}/>
-                            </Link>
+                            <a key={value.id}  href={value.url} target="_blank">
+                                <ImageContacts src= {value.iconContact} alt='icone contato'  width={0} height={0}/>
+                            </a>
                         
                         
                         
                     ))}
 
                 </nav>
-                <section>
+                <section className="containerImageFooter">
                     <div className="containerLogoFooter">
-                        <Image src= '/image/logoComLetrasPretas.png' alt='Logo rodape' width={160} height={120} />
+                        <ImageLogo src= '/image/logoComLetrasPretas.svg' alt='Logo rodape' width={0} height={0} />
                     </div>
                     <h3>CNPJ: 51.876.637/0001-87</h3>
-                    <Image src= '/image/fotoRaphaFooter.png' alt='Foto Secretaria' width={214} height={285}/>
+                    <ImageFooterCeo src= '/image/fotoRaphaFooter.svg' alt='Foto Secretaria' width={0} height={0}/>
 
 
                 </section>
 
             </FooterContact>
         
-        </>
+        </Element>
     )
 }

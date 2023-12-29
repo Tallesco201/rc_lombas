@@ -1,4 +1,5 @@
 
+import AboutMe from '@/components/AboutMe/aboutMe'
 import ContactFooter from '@/components/Contact/contact'
 import Contact from '@/components/Contact/contact'
 import Header from '@/components/Header/header'
@@ -18,11 +19,12 @@ export default function Home() {
         <HomePage/>
         <Container>
           <ListMoralValues/>
-          <VideoPlayer/>
-          <ListService/>
+         {/*  <VideoPlayer/>*/}
+         <AboutMe/>
+        <ListService/> 
         </Container>
      </main>
-     <ContactFooter/>
+      <ContactFooter/> 
   
     </>
   )

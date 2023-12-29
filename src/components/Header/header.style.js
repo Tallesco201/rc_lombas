@@ -8,6 +8,13 @@ export const Header = styled.header`
   z-index: 2;
   width: 100%;
 
+  @media only  screen and (max-width:578px) {  
+        flex-direction: column;
+        margin-bottom: 100px;
+        
+
+      }
+
   .logoHeader{
     
   }
@@ -38,6 +45,10 @@ export const Header = styled.header`
             z-index: 1;
             transition: color 0.4s ease;
             padding-bottom: 5px;
+
+            @media only  screen and (max-width:400px) {  
+                font-size: 12px;
+            }
           }
           a::before { 
               content: " ";
@@ -57,6 +68,17 @@ export const Header = styled.header`
             a:hover::before {
                 right: 0;
             }
+            @media only  screen and (max-width:500px) {  
+              gap:35px;
+            }
+            @media only  screen and (max-width:350px) {  
+              gap: 20px;
+            }    
+  
+          
           }
+
+
+
   }
 `;
