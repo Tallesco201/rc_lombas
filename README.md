@@ -1,7 +1,7 @@
 ## Projeto de Landing Page para Acessoria Contábil
 
 ##
-- 🛠 Link do projeto : (https://react-entrega-hamburgueria-da-kenzie-talles-simao.vercel.app/)
+- 🛠 Link do projeto : (https://rc-lombas.vercel.app/)
 
   
 Este projeto consiste em criar uma landing page para uma acessoria contábil que oferece diversos serviços para pessoas físicas e jurídicas, tais como:
@@ -14,7 +14,7 @@ Este projeto consiste em criar uma landing page para uma acessoria contábil que
 - Imposto de renda PF e PJ
 - Negociações com a Receita Federal
 <div>
-<img  width="100%" align="center" src= "![image](https://github.com/Tallesco201/rc_lombas/assets/102775805/cf4e9adb-0ddc-4e78-8d5e-878e76eeebc8)
+<img  width="100%" align="center" src= "https://github.com/Tallesco201/rc_lombas/assets/102775805/cf4e9adb-0ddc-4e78-8d5e-878e76eeebc8
 "/>
 </div>
 
